@@ -29,10 +29,6 @@ public class EmployeeRepository {
   @Autowired
   private EmergencyContactRepository emergencyContactRepository;
 
-  public Optional<EmployeeDO> findEmployeeByCode(String code) {
-    return Optional.ofNullable(employeeMapper.findEmployeeByCode(code));
-  }
-
   public Optional<Employee> findEmployee(String employeeCode) {
     EmployeeDO employeeDO = this.employeeMapper.findEmployeeByCode(employeeCode);
     if (employeeDO == null) {

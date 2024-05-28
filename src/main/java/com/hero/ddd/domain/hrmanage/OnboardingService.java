@@ -61,6 +61,7 @@ public class OnboardingService {
     record.setEmployeeCode(onboardDTO.getEmployeeCode());
     record.setOrgCode(onboardDTO.getOrgCode());
     record.setPositionCode(onboardDTO.getPositionCode());
+    record.setStartDate(onboardDTO.getEntryDate());
 
     this.serveRecordRepository.save(record);
 

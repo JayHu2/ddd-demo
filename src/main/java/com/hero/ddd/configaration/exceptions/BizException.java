@@ -1,5 +1,6 @@
 package com.hero.ddd.configaration.exceptions;
 
+@SuppressWarnings("unused")
 public class BizException extends RuntimeException {
 
   private static final long serialVersionUID = 1L;
@@ -10,4 +11,6 @@ public class BizException extends RuntimeException {
     super(message);
     this.bizCode = bizCode;
   }
+  
+  // Getters and Setters
 }

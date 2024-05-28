@@ -1,5 +1,7 @@
 package com.hero.ddd.domain.hrmanage.serve;
 
+import java.time.LocalDate;
+
 /**
  * 任职记录 实体
  */
@@ -10,6 +12,10 @@ public class ServeRecord {
   private String orgCode;
 
   private String positionCode;
+
+  private LocalDate startDate;
+
+  private LocalDate endDate;
 
   private boolean primary;
 
@@ -45,4 +51,19 @@ public class ServeRecord {
     this.employeeCode = employeeCode;
   }
 
+  public LocalDate getStartDate() {
+    return startDate;
+  }
+
+  public void setStartDate(LocalDate startDate) {
+    this.startDate = startDate;
+  }
+
+  public LocalDate getEndDate() {
+    return endDate;
+  }
+
+  public void setEndDate(LocalDate endDate) {
+    this.endDate = endDate;
+  }
 }

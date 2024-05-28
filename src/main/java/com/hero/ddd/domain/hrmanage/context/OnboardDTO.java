@@ -1,5 +1,7 @@
 package com.hero.ddd.domain.hrmanage.context;
 
+import java.time.LocalDate;
+
 public class OnboardDTO {
 
   private String employeeCode;
@@ -9,6 +11,8 @@ public class OnboardDTO {
   private String positionCode;
 
   private String orgCode;
+
+  private LocalDate entryDate;
 
   public String getEmployeeCode() {
     return employeeCode;
@@ -40,6 +44,14 @@ public class OnboardDTO {
 
   public void setName(String name) {
     this.name = name;
+  }
+
+  public LocalDate getEntryDate() {
+    return entryDate;
+  }
+
+  public void setEntryDate(LocalDate entryDate) {
+    this.entryDate = entryDate;
   }
 
 }
